@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "searchsploit"
+version = "2.0.0"
+description = "Windows-native SearchSploit CLI for the Exploit Database"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "KaiHT-Ladiant" }]
+keywords = ["searchsploit", "exploitdb", "exploit-database", "security"]
+dependencies = [
+    "colorama>=0.4.6",
+    "pyperclip>=1.8.2",
+]
+
+[project.optional-dependencies]
+dev = ["pyinstaller>=6.0"]
+
+[project.scripts]
+searchsploit = "searchsploit.cli:main"
+
+[project.urls]
+Documentation = "https://www.exploit-db.com/searchsploit"
+UpstreamInspiration = "https://github.com/rad10/SearchSploit.py"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["searchsploit*"]
+
+[tool.setuptools.package-data]
+searchsploit = ["data/.searchsploit_rc"]

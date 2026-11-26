@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+*.spec.bak
+*.log
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# Local Exploit-DB clones (do not commit)
+/exploitdb/
+/exploitdb-papers/
+/exploitdb-bin-sploits/
+# Local RC overrides
+.searchsploit_rc.local

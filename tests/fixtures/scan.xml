@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<nmaprun>
+  <host>
+    <address addr="10.0.0.1" addrtype="ipv4"/>
+    <hostnames>
+      <hostname name="target.local" type="PTR"/>
+    </hostnames>
+    <ports>
+      <port protocol="tcp" portid="80">
+        <state state="open"/>
+        <service name="http" product="Example App" version="1.1"/>
+      </port>
+    </ports>
+  </host>
+</nmaprun>
